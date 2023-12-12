@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RichKDEV's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+    <link rel="stylesheet" href="http://unpkg.com/98.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="preloader"></div>
+    <div class="content">
+        <div class="window" id="main" pos="center">
+            <div class="title-bar">
+                <div class="title-bar-text">Portfolio</div>
+            </div>
+            <div class="window-body">
+                <h1><i>RichK</i><span>DEV</span></h1>
+                <h2>AKA: Richmond Kleinson</h2>
+                <ul>
+                    <li>🏫 Junior high school student in Jakarta, Indonesia</li>
+                    <li>⚙️ Self-taught front-end developer</li>
+                    <li>👨‍💻 Coding since 2019 - present!</li>
+                    <li>📚 Currently learning game & back-end development</li>
+                </ul>
+                <p>Take a look at my:</p>
+                <div class="links">
+                    <button onclick='show(); location.href="#skillset"'>Skillset</button>
+                    <button onclick='show(); location.href="#projects"'>My work</button>
+                    <button onclick='show(); location.href="#contacts"'>Contacts</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="info" pos="invis">
+            <div class="title-bar">
+                <div class="title-bar-text">Information</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Close" onclick='close(); location.href=""'>&nbsp;</button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div id="skillset">
+                    <h2>Skillset</h2>
+                    <label>HTML&nbsp;</label>
+                    <progress value="80" max="100"></progress>
+                    <label>85%</label>
+                    <br>
+                    <label>CSS&nbsp;</label>
+                    <progress value="70" max="100"></progress>
+                    <label>80%</label>
+                    <br>
+                    <label>Javascript&nbsp;</label>
+                    <progress value="40" max="100"></progress>
+                    <label>40%</label>
+                </div>
+                <hr>
+                <div id="projects">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><a href="http://richkdev.github.io/Santa-Laurensia" target="_blank">Santa Laurensia School's UNOFFICIAL website</a></li>
+                        <li><a href="http://richkdev.github.io/fav-character" target="_blank">Sonic's Biography</a></li>
+                        <li><a href="http://github.com/richkdev/Cleanup-Catastrophe" target="_blank">Cleanup Catastrophe</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div id="contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li><a href="http://github.com/richkdev" target="_blank">GitHub</a></li>
+                        <li><a href="http://richkdev.itch.io/" target="_blank">Itch.io</a></li>
+                        <li><a href="http://twitter.com/richkdev" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="src/script.js"></script>
+
+</html>
